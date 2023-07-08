@@ -3,7 +3,8 @@ terraform {
     organization = "sp-howard"
 
     workspaces {
-      name = "cloud-resume-front-end"
+      # name = "cloud-resume-front-end"
+      name = "cloud-resume-front-end-gh"
     }
   }
 
