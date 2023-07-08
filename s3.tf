@@ -29,5 +29,7 @@ locals {
     "png"  = "image/png"
     "svg"  = "image/svg+xml"
     "txt"  = "text/plain"
+    "xml"  = "application/xml"
+    "jpg"  = "image/jpeg"
   }
 }
