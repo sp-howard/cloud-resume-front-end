@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Steven Howard - Cloud Engineer</title>
-    <link>https://stevenhoward.net/</link>
-    <description>Recent content on Steven Howard - Cloud Engineer</description>
+    <title>Python on Steven Howard - Cloud Engineer</title>
+    <link>https://stevenhoward.net/tags/python/</link>
+    <description>Recent content in Python on Steven Howard - Cloud Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jul 2023 15:20:15 +0900</lastBuildDate><atom:link href="https://stevenhoward.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jul 2023 15:20:15 +0900</lastBuildDate><atom:link href="https://stevenhoward.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloud Resume Challenge</title>
       <link>https://stevenhoward.net/blogs/cloud-resume-challenge/</link>
