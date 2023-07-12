@@ -31,5 +31,7 @@ locals {
     "txt"  = "text/plain"
     "xml"  = "application/xml"
     "jpg"  = "image/jpeg"
+    "pdf"  = "application/pdf"
+    "docx"  = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
   }
 }
