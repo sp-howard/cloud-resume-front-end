@@ -54,7 +54,7 @@ Menus:
 
 params:
   title: "Steven Howard - Cloud Engineer"
-  description: Text about my cool site
+  description: "Demystifying the magic of the Cloud to unleash your business potential."
   staticPath: ""  # The path to serve the static files from
   favicon: "/images/SH.png"
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
@@ -117,7 +117,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Steven Howard."
+    title: "Steven Howard, Brother."
     subtitle: "Automation is my Passion."
     content: "Demystifying the magic of the Cloud to unleash your business potential."
     image: /images/profile.jpg
