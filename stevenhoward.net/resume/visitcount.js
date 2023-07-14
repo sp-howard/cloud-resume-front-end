@@ -1,4 +1,4 @@
-api_url = "https://32q5jrub61.execute-api.us-west-2.amazonaws.com/prod/viewcount";
+api_url = "https://api.stevenhoward.net/viewcount";
 
 fetch(api_url, { method: "GET" })
   .then((res) => res.json())
