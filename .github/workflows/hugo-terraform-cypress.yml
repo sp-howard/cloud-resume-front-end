@@ -27,7 +27,10 @@ jobs:
           hugo-version: 'latest'
 
       - name: "Build Site"
-        run: hugo --minify
+        run: |
+          cd stevenhoward.net
+          hugo --minify
+
 
   terraform:
     if: github.repository == 'sp-howard/cloud-resume-back-end'
