@@ -9,12 +9,12 @@ data "aws_s3_bucket" "www_bucket" {
 resource "aws_s3_object" "www_bucket_upload" {
   bucket = data.aws_s3_bucket.www_bucket.id
 
-  for_each = fileset("./stevenhoward.net", "**")
+  for_each = fileset("./stevenhoward.net/public", "**")
 
   key          = each.value
   content_type = lookup(tomap(local.mime_types), element(split(".", each.key), length(split(".", each.key)) - 1))
-  source       = "./stevenhoward.net/${each.value}"
-  etag         = filemd5("./stevenhoward.net/${each.value}")
+  source       = "./stevenhoward.net/public/${each.value}"
+  etag         = filemd5("./stevenhoward.net/public/${each.value}")
 }
 
 # Match file type to content type so that S3 can serve the files correctly
