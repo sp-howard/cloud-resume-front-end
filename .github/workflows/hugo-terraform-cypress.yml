@@ -55,16 +55,7 @@ jobs:
           run: ${{ steps.apply-run.outputs.run_id }}
           comment: "Apply Run from GitHub Actions CI ${{ github.sha }}"
 
-  # cypress:
-  #   name: "Cypress End-to-End Test"
-  #   runs-on: ubuntu-22.04
-  #   needs: terraform
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-  #     # Install npm dependencies, cache them correctly
-  #     # and run all Cypress tests
-  #     - name: Cypress run
-  #       uses: cypress-io/github-action@v5
-  #       with:
-  #           spec: cypress/e2e/stevenhoward.cy.js
+      - name: "Cypress End-to-End Test"
+        uses: cypress-io/github-action@v5
+        with:
+            spec: stevenhoward.cy.js
