@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Hugo Website ZIP
-          path: stevenhoward.net
+          path: stevenhoward.net/public
           retention-days: 5
 
       - name: Upload to S3
@@ -39,7 +39,7 @@ jobs:
           aws_key_id: ${{secrets.AWS_KEY_ID}}
           aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: stevenhoward.net
-          source_dir: stevenhoward.net
+          source_dir: stevenhoward.net/public
 
       # - name: "Copy website files to S3"
       #   uses: qoqa/action-s3-cp@v1.1
