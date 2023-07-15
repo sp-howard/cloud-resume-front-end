@@ -33,6 +33,9 @@ jobs:
           cd stevenhoward.net
           pwd
           ls
+          cd themes
+          ls
+          cd ..
           hugo --minify
 
       - name: "Upload Terraform Configuration"
