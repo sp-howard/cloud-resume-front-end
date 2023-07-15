@@ -1,4 +1,4 @@
-name: "Terraform Apply and Cypress Test"
+name: "Hugo Build and Terraform Apply"
 
 on:
   push:
@@ -14,12 +14,14 @@ env:
 
 
 jobs:
-  hugo:
-    name: "Build Hugo Static Site"
+  hugo-terraform:
+    name: "Hugo Build and Terraform Apply"
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: "Git Checkout"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: "Build Hugo Static Site"
         uses: peaceiris/actions-hugo@v2
@@ -31,32 +33,21 @@ jobs:
           cd stevenhoward.net
           hugo --minify
 
-
-  terraform:
-    name: "Terraform Apply"
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    needs: hugo
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Upload Configuration
+      - name: "Upload Terraform Configuration"
         uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.0
         id: apply-upload
         with:
           workspace: ${{ env.TF_WORKSPACE }}
           directory: ${{ env.CONFIG_DIRECTORY }}
 
-      - name: Create Apply Run
+      - name: "Create Apply Run"
         uses: hashicorp/tfc-workflows-github/actions/create-run@v1.0.0
         id: apply-run
         with:
           workspace: ${{ env.TF_WORKSPACE }}
           configuration_version: ${{ steps.apply-upload.outputs.configuration_version_id }}
 
-      - name: Apply
+      - name: "Terraform Apply"
         uses: hashicorp/tfc-workflows-github/actions/apply-run@v1.0.0
         if: fromJSON(steps.apply-run.outputs.payload).data.attributes.actions.IsConfirmable
         id: apply
