@@ -28,12 +28,13 @@ jobs:
       - name: Upload to S3
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
-          command: cp --recursive
+          command: cp
           source: ./stevenhoward.net/public
           destination: s3://stevenhoward.net
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-west-2
+          flags: --recursive
 
       - name: "Cypress End-to-End Test"
         uses: cypress-io/github-action@v5
