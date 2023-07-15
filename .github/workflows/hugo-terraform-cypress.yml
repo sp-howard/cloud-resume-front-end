@@ -23,10 +23,10 @@ jobs:
       - name: "Git Checkout"
         uses: actions/checkout@v3
 
-      - name: "Build Hugo Static Site"
+      - name: "Setup Hugo"
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.115.1'
 
       - name: "Build Site"
         run: |
