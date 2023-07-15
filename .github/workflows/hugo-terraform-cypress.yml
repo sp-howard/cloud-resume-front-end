@@ -20,40 +20,40 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: "Git Checkout"
-        uses: actions/checkout@v3
+      # - name: "Git Checkout"
+      #   uses: actions/checkout@v3
 
-      - name: "Setup Hugo"
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.115.1'
+      # - name: "Setup Hugo"
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: '0.115.1'
 
-      - name: "Build Site"
-        run: |
-          cd stevenhoward.net
-          hugo --minify
+      # - name: "Build Site"
+      #   run: |
+      #     cd stevenhoward.net
+      #     hugo --minify
 
-      - name: "Upload Terraform Configuration"
-        uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.0
-        id: apply-upload
-        with:
-          workspace: ${{ env.TF_WORKSPACE }}
-          directory: ${{ env.CONFIG_DIRECTORY }}
+      # - name: "Upload Terraform Configuration"
+      #   uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.0
+      #   id: apply-upload
+      #   with:
+      #     workspace: ${{ env.TF_WORKSPACE }}
+      #     directory: ${{ env.CONFIG_DIRECTORY }}
 
-      - name: "Create Apply Run"
-        uses: hashicorp/tfc-workflows-github/actions/create-run@v1.0.0
-        id: apply-run
-        with:
-          workspace: ${{ env.TF_WORKSPACE }}
-          configuration_version: ${{ steps.apply-upload.outputs.configuration_version_id }}
+      # - name: "Create Apply Run"
+      #   uses: hashicorp/tfc-workflows-github/actions/create-run@v1.0.0
+      #   id: apply-run
+      #   with:
+      #     workspace: ${{ env.TF_WORKSPACE }}
+      #     configuration_version: ${{ steps.apply-upload.outputs.configuration_version_id }}
 
-      - name: "Terraform Apply"
-        uses: hashicorp/tfc-workflows-github/actions/apply-run@v1.0.0
-        if: fromJSON(steps.apply-run.outputs.payload).data.attributes.actions.IsConfirmable
-        id: apply
-        with:
-          run: ${{ steps.apply-run.outputs.run_id }}
-          comment: "Apply Run from GitHub Actions CI ${{ github.sha }}"
+      # - name: "Terraform Apply"
+      #   uses: hashicorp/tfc-workflows-github/actions/apply-run@v1.0.0
+      #   if: fromJSON(steps.apply-run.outputs.payload).data.attributes.actions.IsConfirmable
+      #   id: apply
+      #   with:
+      #     run: ${{ steps.apply-run.outputs.run_id }}
+      #     comment: "Apply Run from GitHub Actions CI ${{ github.sha }}"
 
       - name: "Cypress End-to-End Test"
         uses: cypress-io/github-action@v5
