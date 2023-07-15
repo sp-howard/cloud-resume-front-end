@@ -25,31 +25,15 @@ jobs:
           cd stevenhoward.net
           hugo --minify
 
-      - name: "Zip"
-        uses: actions/upload-artifact@v2
-        with:
-          name: Hugo Website ZIP
-          path: stevenhoward.net/public
-          retention-days: 5
-
       - name: Upload to S3
-        uses: shallwefootball/s3-upload-action@master
-        id: S3
+        uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
-          aws_key_id: ${{secrets.AWS_KEY_ID}}
-          aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-          aws_bucket: stevenhoward.net
-          source_dir: stevenhoward.net/public
-
-      # - name: "Copy website files to S3"
-      #   uses: qoqa/action-s3-cp@v1.1
-      #   env:
-      #     AWS_S3_BUCKET: 'stevenhoward.net'
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     AWS_REGION: 'us-west-2'
-      #     AWS_S3_PATH: '/.'
-      #     FILE: 'stevenhoward.net/public -recursive'
+          command: cp
+          source: ./stevenhoward.net/public
+          destination: s3://stevenhoward.net
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: us-west-2
 
       - name: "Cypress End-to-End Test"
         uses: cypress-io/github-action@v5
