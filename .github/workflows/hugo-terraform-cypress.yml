@@ -31,6 +31,8 @@ jobs:
       - name: "Build Site"
         run: |
           cd stevenhoward.net
+          pwd
+          ls
           hugo --minify
 
       - name: "Upload Terraform Configuration"
