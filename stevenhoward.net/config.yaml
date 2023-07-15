@@ -117,7 +117,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Steven Howard, Brother."
+    title: "Steven Howard."
     subtitle: "Automation is my Passion."
     content: "Demystifying the magic of the Cloud to unleash your business potential."
     image: /images/profile.jpg
