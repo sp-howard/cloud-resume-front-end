@@ -2,7 +2,7 @@
   "devDependencies": {
     "cypress": "^12.17.1"
   },
-  "name": "cloud-resume-back-end",
+  "name": "cloud-resume-front-end",
   "description": "",
   "version": "1.0.0",
   "main": "cypress-test.js",
