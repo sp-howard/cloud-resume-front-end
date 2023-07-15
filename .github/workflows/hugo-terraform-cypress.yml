@@ -1,17 +1,9 @@
-name: "Hugo Build and Terraform Apply"
+name: "Hugo Build and Copy to S3"
 
 on:
   push:
     branches:
       - main
-
-env:
-  TF_CLOUD_ORGANIZATION: "sp-howard"
-  TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
-
-  TF_WORKSPACE: "cloud-resume-front-end-gh"
-  CONFIG_DIRECTORY: "./"
-
 
 jobs:
   hugo-terraform:
@@ -33,28 +25,16 @@ jobs:
           cd stevenhoward.net
           hugo --minify
 
-      - name: "Upload Terraform Configuration"
-        uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.0
-        id: apply-upload
-        with:
-          workspace: ${{ env.TF_WORKSPACE }}
-          directory: ${{ env.CONFIG_DIRECTORY }}
+      - name: "Copy website files to S3"
+        uses: qoqa/action-s3-cp@v1.1
+        env:
+          AWS_S3_BUCKET: 'stevenhoward.net'
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'us-west-2'
+          AWS_S3_PATH: '/.'
+          FILE: 'stevenhoward.net/public -recursive'
 
-      - name: "Create Apply Run"
-        uses: hashicorp/tfc-workflows-github/actions/create-run@v1.0.0
-        id: apply-run
-        with:
-          workspace: ${{ env.TF_WORKSPACE }}
-          configuration_version: ${{ steps.apply-upload.outputs.configuration_version_id }}
-
-      - name: "Terraform Apply"
-        uses: hashicorp/tfc-workflows-github/actions/apply-run@v1.0.0
-        if: fromJSON(steps.apply-run.outputs.payload).data.attributes.actions.IsConfirmable
-        id: apply
-        with:
-          run: ${{ steps.apply-run.outputs.run_id }}
-          comment: "Apply Run from GitHub Actions CI ${{ github.sha }}"
-          
       - name: "Cypress End-to-End Test"
         uses: cypress-io/github-action@v5
         with:
