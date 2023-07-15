@@ -28,9 +28,9 @@ jobs:
       - name: Upload to S3
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
-          command: cp
+          command: cp --recursive
           source: ./stevenhoward.net/public
-          destination: s3://stevenhoward.net --recursive
+          destination: s3://stevenhoward.net
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-west-2
