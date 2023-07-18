@@ -15,7 +15,7 @@ tags:
 ---
 ## Introduction
 
-The Cloud. It's the future of computing, and the future is now. But as a guy who's spent most of his career in on-prem networks, my understanding of the Cloud was limited to "someone else's computer," or the place where my iPhone photos are backed up.
+The Cloud. It’s the future of IT infrastructure, and the future is now. But as a guy who's spent most of his career in on-prem networks, my understanding of the Cloud was limited to "someone else's computer," or the place where my iPhone photos are backed up. In the IT industry, you must always be learning and as technology evolves, so should you. My goal: Demystify the Cloud.
 
 I began my cloud journey with the AWS Cloud Practitioner Certification. Suddenly, I found myself drowning in a sea of cloud services with names like Kinesis, DynamoDB, and Aurora. It felt like deciphering a secret language. But amidst the confusion, I realized the immense power of the Cloud. I could build an entire enterprise infrastructure on someone else's hardware with just a few lines of code. Mind. Blown.
 
