@@ -1,5 +1,5 @@
 ---
-title: "Cloud Resume Challenge"
+title: "Creating My Cloud Portfolio"
 date: 2023-07-10T15:20:15+09:00
 draft: false
 author: Steven Howard
