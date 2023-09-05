@@ -284,7 +284,7 @@ params:
         image: images/certs/terraform.png
       - title: Cisco Certified Network Associate (CCNA)
         content: |-
-          February 2022 <br>
+          February 2020 <br>
           NYQDNWFPKDEQ16WG
         url: https://cp.certmetrics.com/cisco/en/public/verify/credential/NYQDNWFPKDEQ16WG
         image: images/certs/ccna.png
