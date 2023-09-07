@@ -1,16 +1,16 @@
 body {
-  font-family: Garamond;
+  font-family: Cambria;
   background-color: #eaedf0;
   /* background-color: #ddd; */
-  font-size: 14pt;
+  font-size: 11pt;
 }
 
 #resume-page {
-  width: 1000px;
-  margin-top: 2em;
+  width: 750px;
+  /* margin-top: 1em; */
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1.5em;
+  /* margin-bottom: 1em; */
   background-color: white;
   padding: 3em;
   /* box-shadow: 0px 0px 0.5em; */
@@ -19,12 +19,12 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 30pt;
+  font-size: 14pt;
   line-height: 0;
 }
 
 h2 {
-  font-size: 14pt;
+  font-size: 10pt;
   line-height: 0;
   padding-top: 0.5em;
 }
@@ -35,18 +35,20 @@ hr {
 
 #title-subheading {
   text-align: center;
-  font-size: 18pt;
+  font-size: 11pt;
   padding-bottom: 0.2em;
 }
 
 #title-subheading-2 {
   text-align: center;
-  font-size: 16pt;
+  font-size: 11pt;
   padding-bottom: 0.2em;
 }
 
 .windings {
   font-family: wingdings;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .heading {
@@ -55,7 +57,7 @@ hr {
 
 .subheading {
   /* font-weight: bold; */
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .left-align {
@@ -67,9 +69,14 @@ hr {
   font-weight: bold;
 }
 
+ul {
+  margin-left: -25px;
+}
+
 li {
   list-style-type: square;
   padding-bottom: 0.3em;
+  padding-left: 10px
 }
 
 a {
@@ -88,29 +95,33 @@ p {
   column-count: 2;
 }
 
+.project_urls {
+  line-height: 1.1em;
+  column-count: 2;
+}
+
+.project_urls li a{
+  font-size: 9pt;
+}
+
 #skills {
   line-height: 1.3em;
 }
 
 /* Viewcount */
 
-#view_count_line {
+.view_count_line {
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 12pt;
 }
 
-#view_count {
+.view_count {
   font-weight: bold;
   display: inline-block;
-  font-size: 16pt;
-  
-}
-
-#view_count_tag {
-  text-align: center;
-  margin-top: -0.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.25rem;
   font-size: 14pt;
+  
 }
 
 /* Download Buttons */
@@ -119,7 +130,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 button.btn > img {
@@ -134,4 +146,13 @@ button.btn {
 .btn-text {
   padding: 5px;
   vertical-align: 9px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 780px) {
+  #resume-page {
+    width: 98%;
+    padding: 1em;
+  }
 }

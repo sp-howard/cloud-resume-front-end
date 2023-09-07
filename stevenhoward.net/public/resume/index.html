@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Steven Howard's Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/bootstrap-5/css/bootstrap.min.css" media="all"> -->
+  <script src="visitcount.js"></script>
+</head>
+
+<body>
+  <div id="resume-page">
+
+    <!-- HEADING -->
+    <h1>Steven Howard</h1>
+    <div id="title-subheading">stevenphoward@gmail.com <span class="windings">w</span> (559) 308-4897 <span
+        class="windings">w</span> Visalia, CA</div>
+    <div id="title-subheading-2">GitHub - <u><a href="https://github.com/sp-howard">github.com/sp-howard</a></u> <span
+        class="windings">w</span> Portfolio
+      - <u><a href="https://stevenhoward.net"><b>stevenhoward.net</b></a></u> <span class="windings">w</span> LinkedIn -
+      <u><a href="https://linkedin.com/in/sp-howard">linkedin.com/in/sp-howard</a></u> </div>
+    <hr>
+
+    <!-- SUMMARY -->
+    <h2>SUMMARY</h2>
+    <hr>
+    <p>Cloud Engineer with 7 years of experience in network and server administration, Microsoft 365, scripting, and
+      technical documentation. Passionate about automating IT infrastructure and processes. Proven track record of
+      supporting end-users, enhancing network security, and ensuring network and application availability. </p>
+
+    <!-- PROJECTS -->
+    <h2>PROJECTS</h2>
+    <hr>
+    <div class="heading">Cloud Resume Challenge</div>
+    <div><u><a
+          href="https://stevenhoward.net/blogs/cloud-resume-challenge">https://stevenhoward.net/blogs/cloud-resume-challenge</u></a>
+    </div>
+    <p>Static portfolio website hosted on AWS S3, with serverless components including API Gateway, Lambda, and
+      DynamoDB. Utilizes Route53, Amazon Certificate Manager, and CloudFront. Infrastructure was converted to IaC using
+      Terraform and implemented via CI/CD pipeline using GitHub Actions with Cypress end-to-end testing.</p>
+
+    <!-- CERTIFICATIONS -->
+    <h2>CERTIFICATIONS</h2>
+    <hr>
+    <ul id="certs">
+      <li><b>AWS</b> Solutions Architect Associate, Cloud Practitioner</li>
+      <li><b>Cisco</b> Certified Network Associate (CCNA)</li>
+      <li><b>HashiCorp</b> Terraform Associate </li>
+      <li><b>CompTIA</b> A+, Network+, Security+, Project+ </li>
+    </ul>
+
+    <!-- EXPERIENCE -->
+    <h2>EXPERIENCE</h2>
+    <hr>
+    <div class="heading">Network Administrator II<span class="left-align">June 2021 – Present</span></div>
+    <div class="subheading">Family HealthCare Network<span class="left-align">Visalia, CA</span></div>
+    <ul>
+      <li>Network Deployment and Automation – Configured and installed Cisco switches and routers, replacing end-of-life
+        equipment and standing up new worksites. Created Python script to automate the generation of switch
+        configurations. </li>
+      <li>Microsoft 365 – Instrumental in migration to Exchange Online. Designed, built, and maintained organization’s
+        Intranet and business intelligence dashboard in SharePoint. Responsible for initial testing, licensing,
+        deployment, and continued support for all Microsoft 365 applications. </li>
+      <li>Software Deployment – Revolutionized application deployment by fully utilizing PDQ to its full potential,
+        completely automating previously manual overnight application updates. </li>
+    </ul>
+    <div class="heading">Network Administrator<span class="left-align">May 2019 – May 2021</span></div>
+    <div class="subheading">Valley Republic Bank<span class="left-align">Bakersfield, CA</span></div>
+    <ul>
+      <li>Network Administration – Developed and implemented secure baseline for network switches. Deployed Cisco
+        Catalyst 9200 switches. Created and maintained complete network diagram and supporting documentation.</li>
+      <li>Security Hardening – Utilized WSUS and PowerShell scripts to remediate server and workstation vulnerabilities
+        identified by Rapid7’s InsightVM. Automated patching of third-party applications. Enhanced the organization’s
+        security posture to excel in federal audits, including internal and external network vulnerability assessments.
+      </li>
+      <li>Technical Documentation – Designed and built team knowledge base in Confluence and contributed 50+ articles.
+      </li>
+    </ul>
+    <div class="heading">Technology Consultant<span class="left-align">January 2017 – April 2019</span></div>
+    <div class="subheading">Managed Service Providers (BG Origin Group / DiamondIT)<span class="left-align">Hanford, CA
+        / Bakersfield, CA</span></div>
+    <ul>
+      <li>Network Architect – Built networks ranging from SOHO to Enterprise-grade. Fully implemented networks from
+        initial pitch to implementation. Configured switches, router, firewalls, and ran in-wall Ethernet cables.</li>
+      <li>End-User Support – In-field and remote support for medium sized business and small city governments with an
+        exceptional average customer survey score of 10/10.</li>
+      <li>Disaster Recovery – First responder to crypto-ransomware cases. Restored backups, determined attack vector,
+        and remediated vulnerabilities.</li>
+    </ul>
+
+  </div>
+
+  <!-- Download -->
+  <div class="download">
+    <a href="Steven Howard - Resume - 2023.pdf" download="Steven Howard - Resume - 2023.pdf"><button type="button" class="btn"><img src="/images/pdf.png" alt=""><span class="btn-text">Download PDF</span></button></a>
+    <a href="Steven Howard - Resume - 2023.docx" download="Steven Howard - Resume - 2023.docx"><button type="button" class="btn"><img src="/images/docx.png" alt=""><span class="btn-text">Download DOCX</span></button></a>
+  </div>
+
+  <!-- View Count -->
+  <div id="view_count_line">
+    <div id="view_count_tag">This resume has been viewed <div id="view_count"></div> times</div>
+  </div>
+
+</body>
+
+</html>

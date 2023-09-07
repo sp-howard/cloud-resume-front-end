@@ -5,104 +5,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Steven Howard's Resume</title>
+  <title>Steven Howard's Cloud Engineer Resume</title>
   <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/bootstrap-5/css/bootstrap.min.css" media="all"> -->
   <script src="visitcount.js"></script>
 </head>
 
 <body>
+    <!-- View Count -->
+    <div class="view_count_line">
+      This resume has been viewed <div class="view_count"></div> times
+    </div>
+
+    <!-- Download -->
+    <div class="download">
+      <a href="Steven Howard - Cloud Engineer.docx" download="Steven Howard - Resume - 2023.docx"><button type="button" class="btn"><img src="/images/docx.png" alt=""><span class="btn-text">Download DOCX</span></button></a>
+      <a href="Steven Howard - Cloud Engineer.pdf" download="Steven Howard - Resume - 2023.pdf"><button type="button" class="btn"><img src="/images/pdf.png" alt=""><span class="btn-text">Download PDF</span></button></a>
+    </div>
+
+  
+
+
   <div id="resume-page">
 
     <!-- HEADING -->
     <h1>Steven Howard</h1>
-    <div id="title-subheading">stevenphoward@gmail.com <span class="windings">w</span> (559) 308-4897 <span
-        class="windings">w</span> Visalia, CA</div>
-    <div id="title-subheading-2">GitHub - <u><a href="https://github.com/sp-howard">github.com/sp-howard</a></u> <span
+    <div id="title-subheading">(559) 308-4897   <span class="windings">w</span>    stevenphoward@gmail.com    <span
+        class="windings">w</span>   Visalia, CA</div>
+    <div id="title-subheading-2"> LinkedIn -
+      <u><a href="https://linkedin.com/in/sp-howard">linkedin.com/in/sp-howard   </a></u><span
         class="windings">w</span> Portfolio
-      - <u><a href="https://stevenhoward.net"><b>stevenhoward.net</b></a></u> <span class="windings">w</span> LinkedIn -
-      <u><a href="https://linkedin.com/in/sp-howard">linkedin.com/in/sp-howard</a></u> </div>
+      - <u><a href="https://stevenhoward.net"><b>stevenhoward.net</b></a></u> <span class="windings">w</span>  GitHub - <u><a href="https://github.com/sp-howard">github.com/sp-howard</a></u></div>
     <hr>
 
     <!-- SUMMARY -->
     <h2>SUMMARY</h2>
     <hr>
-    <p>Cloud Engineer with 7 years of experience in network and server administration, Microsoft 365, scripting, and
-      technical documentation. Passionate about automating IT infrastructure and processes. Proven track record of
-      supporting end-users, enhancing network security, and ensuring network and application availability. </p>
-
-    <!-- PROJECTS -->
-    <h2>PROJECTS</h2>
-    <hr>
-    <div class="heading">Cloud Resume Challenge</div>
-    <div><u><a
-          href="https://stevenhoward.net/blogs/cloud-resume-challenge">https://stevenhoward.net/blogs/cloud-resume-challenge</u></a>
-    </div>
-    <p>Static portfolio website hosted on AWS S3, with serverless components including API Gateway, Lambda, and
-      DynamoDB. Utilizes Route53, Amazon Certificate Manager, and CloudFront. Infrastructure was converted to IaC using
-      Terraform and implemented via CI/CD pipeline using GitHub Actions with Cypress end-to-end testing.</p>
+    <p>Dedicated IT professional with 7 years of experience in system administration, automation, and networking. With a deep understanding of IT infrastructure, a passion for optimizing processes through code, and a ravenous appetite for knowledge, I am a prime candidate for a Cloud or DevOps Engineer role. </p>
 
     <!-- CERTIFICATIONS -->
     <h2>CERTIFICATIONS</h2>
     <hr>
     <ul id="certs">
-      <li><b>AWS</b> Solutions Architect Associate, Cloud Practitioner</li>
-      <li><b>Cisco</b> Certified Network Associate (CCNA)</li>
-      <li><b>HashiCorp</b> Terraform Associate </li>
-      <li><b>CompTIA</b> A+, Network+, Security+, Project+ </li>
+      <li><b>AWS</b> Solutions Architect Associate</li>
+      <li>Cisco Certified Network Associate (CCNA)</li>
+      <li>HashiCorp <b>Terraform</b> Associate </li>
+      <li>CompTIA A+, Network+, Security+, Project+ </li>
     </ul>
+
+    <!-- PROJECTS -->
+    <h2>PROJECTS</h2>
+    <hr>
+    <div class="heading">Cloud Portfolio Hosted on AWS</div>
+    <div>    <ul class="project_urls">
+      <li>Blog – <a
+        href="stevenhoward.net/blogs/cloud-portfolio">stevenhoward.net/blogs/cloud-portfolio</a></li>
+      <li>GitHub – <a
+        href="github.com/sp-howard/cloud-resume-back-end">github.com/sp-howard/cloud-resume-back-end</a></li>
+    </ul>
+    </div>
+    <p>Developed a portfolio website hosted on AWS S3, featuring a version of this resume coded in HTML/CSS. Implemented a visitor counter that uses JavaScript to call a REST API via AWS API Gateway, triggering a Lambda function coded in Python using the boto3 library. The counter utilizes DynamoDB for data persistence. Enhanced site security with TLS encryption, leveraging Route53, Amazon Certificate Manager, and CloudFront services. Transitioned the entire infrastructure to Infrastructure as Code (IaC) using Terraform. Automated deployment through a CI/CD pipeline via GitHub Actions, incorporating Cypress for end-to-end testing.</p>
 
     <!-- EXPERIENCE -->
     <h2>EXPERIENCE</h2>
     <hr>
-    <div class="heading">Network Administrator II<span class="left-align">June 2021 – Present</span></div>
+    <div class="heading">Network Administrator<span class="left-align">June 2021 – Present</span></div>
     <div class="subheading">Family HealthCare Network<span class="left-align">Visalia, CA</span></div>
     <ul>
-      <li>Network Deployment and Automation – Configured and installed Cisco switches and routers, replacing end-of-life
-        equipment and standing up new worksites. Created Python script to automate the generation of switch
-        configurations. </li>
-      <li>Microsoft 365 – Instrumental in migration to Exchange Online. Designed, built, and maintained organization’s
-        Intranet and business intelligence dashboard in SharePoint. Responsible for initial testing, licensing,
-        deployment, and continued support for all Microsoft 365 applications. </li>
-      <li>Software Deployment – Revolutionized application deployment by fully utilizing PDQ to its full potential,
-        completely automating previously manual overnight application updates. </li>
+      <li><u>Application Deployment & Automation</u> – Led a comprehensive revamp of application deployment and patch management across 50 clinical sites, affecting over 3,000 endpoints. Utilized PDQ to automate the overnight updates for mission-critical Electronic Health Record (EHR) software, eliminating the need for manual intervention and saving the organization 20 hours of overtime monthly, equivalent to $14,400 in cost savings each year.</li>
+      <li><u>Cloud & Collaboration Services</u> – Served as the go-to Subject Matter Expert for Microsoft 365 services utilized by 1500+ users. Oversaw Azure Active Directory administration and lifecycle management of all Microsoft 365 applications. Orchestrated a seamless migration from on-premises Microsoft Exchange to Exchange Online with zero data loss. Crafted the organization's Intranet and Business Intelligence dashboard in SharePoint. Implemented security policies through Purview/Defender, including Data Loss Prevention (DLP) and Conditional Access.</li>
+      <li><u>Network Reliability & Automation</u> – Developed custom Python scripts to automate the configuration and auditing of network switches, increasing security by identifying and mitigating unauthenticated switchports. Acted as the first-line responder for network outages and VPN connectivity. Spearheaded the configuration and deployment of Cisco hardware, upgrading end-of-life equipment and enabling the successful launch of 10+ new clinical sites. Diligently maintained up-to-date network diagrams and documentation.</li>
+      <li><u>AWS Administration</u> – Managed and secured Linux EC2 instances for the organization's public websites, implementing an automated solution to resolve availability issues by restarting instances upon health check failures. Upheld the principle of least privilege while granting third-party developers secure access to accounts.</li>
+      <li><u>Virtual Infrastructure & System Administration</u> – Oversaw the daily administration and optimization of 100+ Windows servers (2012, 2016, 2019) in VMware's vCenter. Orchestrated the migration of mission-critical services, while routinely managing DHCP scopes, DNS configurations, and GPOs. </li>
     </ul>
     <div class="heading">Network Administrator<span class="left-align">May 2019 – May 2021</span></div>
     <div class="subheading">Valley Republic Bank<span class="left-align">Bakersfield, CA</span></div>
     <ul>
-      <li>Network Administration – Developed and implemented secure baseline for network switches. Deployed Cisco
-        Catalyst 9200 switches. Created and maintained complete network diagram and supporting documentation.</li>
-      <li>Security Hardening – Utilized WSUS and PowerShell scripts to remediate server and workstation vulnerabilities
-        identified by Rapid7’s InsightVM. Automated patching of third-party applications. Enhanced the organization’s
-        security posture to excel in federal audits, including internal and external network vulnerability assessments.
-      </li>
-      <li>Technical Documentation – Designed and built team knowledge base in Confluence and contributed 50+ articles.
-      </li>
+      <li><u>Enterprise Security</u> – Spearheaded security enhancements across 25 servers and 150 workstations, achieving a 95% reduction in vulnerability score as reported by Rapid7's InsightVM. Utilized WSUS and PowerShell scripting for targeted vulnerability remediation and implemented port-security on network switches. These strategic initiatives led to superior performance in federal audits, including FFIEC, PCI, GLBA, SOX, and BSA compliance. </li>
+      <li><u>Technical Documentation</u> – Developed and curated a team knowledge base in Confluence, contributing over 50 articles on topics ranging from network infrastructure and application error resolution to end-user training guides, thereby enhancing team efficiency and problem-solving capabilities.</li>
     </ul>
+
     <div class="heading">Technology Consultant<span class="left-align">January 2017 – April 2019</span></div>
     <div class="subheading">Managed Service Providers (BG Origin Group / DiamondIT)<span class="left-align">Hanford, CA
         / Bakersfield, CA</span></div>
     <ul>
-      <li>Network Architect – Built networks ranging from SOHO to Enterprise-grade. Fully implemented networks from
-        initial pitch to implementation. Configured switches, router, firewalls, and ran in-wall Ethernet cables.</li>
-      <li>End-User Support – In-field and remote support for medium sized business and small city governments with an
-        exceptional average customer survey score of 10/10.</li>
-      <li>Disaster Recovery – First responder to crypto-ransomware cases. Restored backups, determined attack vector,
-        and remediated vulnerabilities.</li>
+      <li><u>Network Implementation & Configuration</u> – Engineered and fully deployed over 20 networks across various scales, from SOHO to Enterprise-grade with up to 500 endpoints. Oversaw the complete lifecycle from initial proposal to implementation, configuring switches, routers, and firewalls to meet customized requirements.</li>
+      <li><u>End-User Support</u> – Provided both in-field and remote support for hardware, software, and network issues to medium-sized businesses and local governments. Consistently earned an average customer survey score of 9.75/10 for service excellence, while resolving over 200 tickets monthly.</li>
     </ul>
 
+    <div class="heading">Freelance Web Developer<span class="left-align">March 2016 – May 2021</span></div>
+    <ul>
+      <li><u>Custom Website Development & Client Relations</u> – Developed, designed, and deployed websites using WordPress for clientele in the real estate and retail sectors. Managed end-to-end web solutions, from domain configuration and hosting to email migration. Actively maintained websites by updating CMS, plugins, and providing on-call support, ensuring optimal performance and user experience.</li>
+      <li><u>Project Example</u> - Created a fully responsive real estate website with MLS (multiple listing service) integration (http://landrealty.biz), which led to a 1000% increase in online inquiries for the client.</li>
+    </ul>
+
+    <h2>EDUCATION</h2>
+    <hr>
+    <div class="heading">Bachelor of Science Information Technology (In Progress)<span class="left-align">August 2022 – Present</span></div>
+    <div class="subheading">Western Governors University
+    <ul>
+      <li>80% complete. Expected graduation in July 2024.</li>
+      <li>Completed courses in Project Management (Agile/Scrum), MySQL Database Administration, and Java Programming.</li>
+    </ul>
+
+</div>
   </div>
 
-  <!-- Download -->
-  <div class="download">
-    <a href="Steven Howard - Resume - 2023.pdf" download="Steven Howard - Resume - 2023.pdf"><button type="button" class="btn"><img src="/images/pdf.png" alt=""><span class="btn-text">Download PDF</span></button></a>
-    <a href="Steven Howard - Resume - 2023.docx" download="Steven Howard - Resume - 2023.docx"><button type="button" class="btn"><img src="/images/docx.png" alt=""><span class="btn-text">Download DOCX</span></button></a>
-  </div>
+    <!-- View Count -->
+    <div class="view_count_line">
+      This resume has been viewed <div class="view_count"></div> times
+    </div>
 
-  <!-- View Count -->
-  <div id="view_count_line">
-    <div id="view_count_tag">This resume has been viewed <div id="view_count"></div> times</div>
-  </div>
+    <!-- Download -->
+    <div class="download">
+      <a href="Steven Howard - Cloud Engineer.docx" download="Steven Howard - Resume - 2023.docx"><button type="button" class="btn"><img src="/images/docx.png" alt=""><span class="btn-text">Download DOCX</span></button></a>
+      <a href="Steven Howard - Cloud Engineer.pdf" download="Steven Howard - Resume - 2023.pdf"><button type="button" class="btn"><img src="/images/pdf.png" alt=""><span class="btn-text">Download PDF</span></button></a>
+    </div>
 
 </body>
 

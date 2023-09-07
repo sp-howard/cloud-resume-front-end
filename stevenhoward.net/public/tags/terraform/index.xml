@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terraform on Steven Howard - DevOps &amp; Cloud Engineer</title>
+    <link>https://stevenhoward.net/tags/terraform/</link>
+    <description>Recent content in Terraform on Steven Howard - DevOps &amp; Cloud Engineer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2023 15:20:15 +0900</lastBuildDate><atom:link href="https://stevenhoward.net/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating My Cloud Portfolio</title>
+      <link>https://stevenhoward.net/blogs/cloud-portfolio/</link>
+      <pubDate>Mon, 10 Jul 2023 15:20:15 +0900</pubDate>
+      
+      <guid>https://stevenhoward.net/blogs/cloud-portfolio/</guid>
+      <description>Introduction The Cloud. It’s the future of IT infrastructure, and the future is now. But as a guy who&amp;rsquo;s spent most of his career in on-prem networks, my understanding of the Cloud was limited to &amp;ldquo;someone else&amp;rsquo;s computer,&amp;rdquo; or the place where my iPhone photos are backed up. In the IT industry, you must always be learning and as technology evolves, so should you. My goal: Demystify the Cloud.
+I began my cloud journey with the AWS Cloud Practitioner Certification.</description>
+    </item>
+    
+  </channel>
+</rss>

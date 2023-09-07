@@ -1,6 +1,6 @@
 baseURL: "https://stevenhoward.net"
 languageCode: "en-us"
-title: "Steven Howard - Cloud Engineer"
+title: "Steven Howard - DevOps & Cloud Engineer"
 theme: hugo-profile
 
 outputs:
@@ -53,8 +53,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Steven Howard - Cloud Engineer"
-  description: "Demystifying the magic of the Cloud to unleash your business potential."
+  title: "Steven Howard - DevOps & Cloud Engineer"
+  description: "Automation is my Passion. The Cloud is my Canvas."
   staticPath: ""  # The path to serve the static files from
   favicon: "/images/SH.png"
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
@@ -119,11 +119,11 @@ params:
     intro: "Hi, my name is"
     title: "Steven Howard."
     subtitle: "Automation is my Passion."
-    content: "Demystifying the magic of the Cloud to unleash your business potential."
+    content: "The Cloud is my Canvas."
     image: /images/profile.jpg
     bottomImage:
       enable: true
-      #roundImage: true # Make hero image circular | default false
+      roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
@@ -146,32 +146,31 @@ params:
     title: "About Me"
     image: /images/profile.jpg
     content: |-
-      **Hi! I'm Steven**, a lifelong technology enthusiast and an IT professional of 7 years (and counting!). I thrive on new challenges. Wrapping my head around a complex problem, researching solutions, generating a proof of concept, implementing, testing, and documenting... I find peace in trusting the process, knowing that any challenge can be solved with willpower and determination. Whether it's consulting a different resource, or simply taking a walk and returning to the problem at a later point... No matter the problem, **I will find the solution**. 
+      **Hi! I'm Steven**, a lifelong technology enthusiast and an IT professional of 7 years. I thrive on new challenges. Wrapping my head around a complex problem, researching solutions, generating a proof of concept, implementing, testing, and documenting - Each step reinforces my conviction that any challenge can be overcome with willpower, determination... or quick walk around the block. 
 
-      My journey began as a Web Developer. I dove headlong into the deep waters of software development, and I **fell in love**. The sense of satisfaction I get when fixing a bug that had been eluding me for ages is unparalleled. 
+      I initially ventured into the tech world as an aspiring Web Developer. I dove headlong into the deep waters of software development, and I **fell in love**. The blend of logic and creativity that coding allows suited me perfectly. 
 
-      Due to life circumstances, I put my JavaScript dreams to rest temporarily, and transitioned into the world of IT Support. My first few years were spent in the Managed Service Provider space, where my growth was exponential. Every day I was presented with a problem I'd never encountered. A piece of software I'd never used. An error I'd never seen. ***And I made it work again.*** I found that IT scratched that same itch that Coding had introduced me to. I continued down that path, further honing my skills in Winders Server Administration and Cisco Networking. I became an essential resource to any team I was a part of. 
+      My coding ambitions would have to be put on hold, as the opportunities in my surroundings were sparse. I instead found myself in the world of IT Support, and what an invaluable detour it's been. My first few years were spent in the Managed Service Provider space, where my growth was exponential. Every day I was presented with a problem I'd never encountered. A piece of software I'd never used. An error I'd never seen. No matter what was broken, ***I made it work again.*** I found that IT fulfilled the same craving for complexity and problem-solving that I had first found in coding. I further honed my skills in Windows Server Administration and Cisco Networking, quickly becoming an essential contributor on any team.
 
-      Now, I'm ready to enter a new arena: Cloud Computing. I'm captivated at the possibilities this technology provides. I've spent many months drinking from the firehouse that is AWS / DevOps / Infrastructure as Code. I invite you to explore my projects, especially the **Cloud Resume Challenge**. I’m proud of what I’ve accomplished, and I hope to transfer these skills to help your business and place it firmly on the cutting-edge.
+      Now, I'm ready to enter a new arena: Cloud Computing. I'm captivated at the possibilities this technology provides. I've spent many months drinking from the firehouse that is AWS, DevOps, and Infrastructure as Code. I encourage you to take a look at my projects, particularly my **Cloud Portfolio** blog post.
+
+      As you navigate through my portfolio, you'll discover a professional who is continuously evolving, always eager to learn, and unyielding in the face of challenges—let's conquer the cloud together.
     skills:
       enable: true
-      title: "I specialize in..."
+      title: "A glimpse at my non-technical side:"
       items:
-        - "AWS"
-        - "Terraform"
-        - "Python"
-        - "JavaScript"
-        - "PowerShell"
-        - "Cisco Networking"
-        - "Windows Server Administration"
-        - "Office 365 Migration and Administration"
+        - "Gaming"
+        - "Sci-Fi"
+        - "Reddit"
+        - "Woodworking"
+        - "Painting"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Network Administrator II"
+      - job: "Network Administrator"
         company: "Family Healthcare Network"
         companyUrl: "https://www.fhcn.org/"
         date: "June 2021 - Present"
@@ -183,9 +182,11 @@ params:
         content: |
           <div class="experience-content">
 
-          - **Network Deployment and Automation** – Configured and installed Cisco switches and routers, replacing end-of-life equipment and standing up new worksites. Created Python script to automate the generation of switch configurations. 
-          - **Microsoft 365** – Instrumental in migration to Exchange Online. Designed, built, and maintained organization’s Intranet and business intelligence dashboard in SharePoint. Responsible for initial testing, licensing, deployment, and continued support for all Microsoft 365 applications. 
-          - **Software Deployment** – Revolutionized application deployment by fully utilizing PDQ to its full potential, completely automating previously manual overnight application updates. 
+          - **Application Deployment & Automation** – Led a comprehensive revamp of application deployment and patch management across 50 clinical sites, affecting over 3,000 endpoints. Utilized PDQ to automate the overnight updates for mission-critical Electronic Health Record (EHR) software, eliminating the need for manual intervention and saving the organization 20 hours of overtime monthly, equivalent to $14,400 in cost savings each year.
+          - **Cloud & Collaboration Services** – Served as the go-to Subject Matter Expert for Microsoft 365 services utilized by 1500+ users. Oversaw Azure Active Directory administration and lifecycle management of all Microsoft 365 applications. Orchestrated a seamless migration from on-premises Microsoft Exchange to Exchange Online with zero data loss. Crafted the organization's Intranet and Business Intelligence dashboard in SharePoint. Implemented security policies through Purview/Defender, including Data Loss Prevention (DLP) and Conditional Access.
+          - **Network Reliability & Automation** – Developed custom Python scripts to automate the configuration and auditing of network switches, increasing security by identifying and mitigating unauthenticated switchports. Acted as the first-line responder for network outages and VPN connectivity. Spearheaded the configuration and deployment of Cisco hardware, upgrading end-of-life equipment and enabling the successful launch of 10+ new clinical sites. Diligently maintained up-to-date network diagrams and documentation.
+          - **AWS Administration** – Managed and secured Linux EC2 instances for the organization's public websites, implementing an automated solution to resolve availability issues by restarting instances upon health check failures. Upheld the principle of least privilege while granting third-party developers secure access to accounts.
+          - **Virtual Infrastructure & System Administration** – Oversaw the daily administration and optimization of 100+ Windows servers (2012, 2016, 2019) in VMware's vCenter. Orchestrated the migration of mission-critical services, while routinely managing DHCP scopes, DNS configurations, and GPOs. 
 
           </div>
       - job: "Network Administrator"
@@ -202,9 +203,8 @@ params:
         content: |
           <div class="experience-content">
 
-          - **Network Administration** – Developed and implemented secure baseline for network switches. Deployed Cisco Catalyst 9200 switches. Created and maintained complete network diagram and supporting documentation.
-          - **Security Hardening** – Utilized WSUS and PowerShell scripts to remediate server and workstation vulnerabilities identified by Rapid7’s InsightVM. Automated patching of third-party applications. Enhanced the organization’s security posture to excel in federal audits, including internal and external network vulnerability assessments.
-          - **Technical Documentation** – Designed and built team knowledge base in Confluence and contributed 50+ articles.
+          - **Enterprise Security** – Spearheaded security enhancements across 25 servers and 150 workstations, achieving a 95% reduction in vulnerability score as reported by Rapid7's InsightVM. Utilized WSUS and PowerShell scripting for targeted vulnerability remediation and implemented port-security on network switches. These strategic initiatives led to superior performance in federal audits, including FFIEC, PCI, GLBA, SOX, and BSA compliance. 
+          - **Technical Documentation** – Developed and curated a team knowledge base in Confluence, contributing over 50 articles on topics ranging from network infrastructure and application error resolution to end-user training guides, thereby enhancing team efficiency and problem-solving capabilities.
 
           </div>
       - job: "Technology Consultant"
@@ -220,19 +220,33 @@ params:
         content: |
           <div class="experience-content">
 
-          - **Network Architect** – Built networks ranging from SOHO to Enterprise-grade. Fully implemented networks from initial pitch to implementation. Configured switches, router, firewalls, and ran in-wall Ethernet cables.
-          - **End-User Support** – In-field and remote support for medium sized business and small city governments with an exceptional average customer survey score of 10/10.
-          - **Disaster Recovery** – First responder to crypto-ransomware cases. Restored backups, determined attack vector, and remediated vulnerabilities.
+          - **Network Implementation & Configuration** – Engineered and fully deployed over 20 networks across various scales, from SOHO to Enterprise-grade with up to 500 endpoints. Oversaw the complete lifecycle from initial proposal to implementation, configuring switches, routers, and firewalls to meet customized requirements.
+          - **End-User Support** – Provided both in-field and remote support for hardware, software, and network issues to medium-sized businesses and local governments. Consistently earned an average customer survey score of 9.75/10 for service excellence, while resolving over 200 tickets monthly.
 
           </div>
+      - job: "Freelance"
+        company: "Web Developer"
+        years: "5"
+        companyUrl: "https://stevenhoward.net/"
+        date: "March 2016 – May 2021"
+        info:
+          enable: true
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          <div class="experience-content">
 
+          - **Custom Website Development & Client Relations** – Developed, designed, and deployed websites using WordPress for clientele in the real estate and retail sectors. Managed end-to-end web solutions, from domain configuration and hosting to email migration. Actively maintained websites by updating CMS, plugins, and providing on-call support, ensuring optimal performance and user experience. 
+          - **Project Example** – Created a fully responsive real estate website with MLS (multiple listing service) integration (http://landrealty.biz), which led to a 1000% increase in online inquiries for the client.
+          </div>
 
   # Projects
   projects:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Cloud Resume Challenge
+      - title: Cloud Portfolio
         content: Static portfolio website hosted on AWS S3, with serverless components including API Gateway, Lambda, and DynamoDB. Also utilized Route53, Amazon Certificate Manager, and CloudFront. Infrastructure was converted to IaC using Terraform, and implemented via CI/CD pipeline using GitHub Actions with Cypress end-to-end testing.
         image: /images/cloud-resume-diagram.png
         featured:
@@ -241,7 +255,6 @@ params:
         badges:
           - "AWS"
           - "Terraform"
-          - "IaC"
           - "CI/CD"
           - "Python"
           - "Javascript"
@@ -253,19 +266,6 @@ params:
             url: https://github.com/sp-howard/cloud-resume-back-end
           #- icon: fab fa-twitter
           #w  url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Open Port Audit
-        content: Read-only introduction into network automation that utilizes the Python frameworks netmiko, NAPALM, and Nornir, to query network switches for ports without authentication commands configured, and export the results to an Excel workbook that contains an individual worksheet for each switch (50+) in the environment. Utilized NetBox for the device database.  
-        image: /images/cisco.jpg
-        featured:
-          name: Blog Post
-          link: /blogs/open-port-audit/
-        badges:
-          - "Network Automation"
-          - "Python"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/sp-howard/Open-Port-Audit
 
   # Achievements / Certifications
   achievements:
@@ -323,8 +323,8 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: Embarking on a new Cloud adventure? Let me guide you on the path to operational excellence!
-    email: stevenphoward@gmail.com
+    content: Embarking on a new adventure? Let's conquer the cloud together!
+    email: steven@stevenhoward.net
     btnName: Email Me
     formspree:
       enable: true # `contact.email` value will be ignored
