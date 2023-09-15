@@ -13,7 +13,7 @@
 
 /* Style subheading of Certifications section */
 .verify {
-    font-style: italic;
+    /* font-style: italic; */
     color: var(--text-secondary-color);
     font-size: 1.2rem;
 }

@@ -21,6 +21,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: manni
 
 Menus:
   main:
@@ -55,8 +57,8 @@ Menus:
 params:
   title: "Steven Howard - DevOps & Cloud Engineer"
   description: "Automation is my Passion. The Cloud is my Canvas."
-  staticPath: ""  # The path to serve the static files from
-  favicon: "/images/SH.png"
+  staticPath: "" # The path to serve the static files from
+  favicon: "/images/home/SH.png"
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
   # Note the lack of "" in true, it should be of boolean type.
@@ -82,11 +84,11 @@ params:
 
   # color preference
   color:
-  #   textColor: 
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-    primaryColor: '#008CFF'
+    #   textColor:
+    #   secondaryTextColor:
+    #   backgroundColor:
+    #   secondaryBackgroundColor:
+    primaryColor: "#008CFF"
   #   secondaryColor:
 
   #   darkmode:
@@ -120,7 +122,7 @@ params:
     title: "Steven Howard."
     subtitle: "Automation is my Passion."
     content: "The Cloud is my Canvas."
-    image: /images/profile.jpg
+    image: /images/home/profile.jpg
     bottomImage:
       enable: true
       roundImage: true # Make hero image circular | default false
@@ -144,7 +146,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: /images/profile.jpg
+    image: /images/home/profile.jpg
     content: |-
       **Hi! I'm Steven**, a lifelong technology enthusiast and an IT professional of 7 years. I thrive on new challenges. Wrapping my head around a complex problem, researching solutions, generating a proof of concept, implementing, testing, and documenting - Each step reinforces my conviction that any challenge can be overcome with willpower, determination... or quick walk around the block. 
 
@@ -156,7 +158,7 @@ params:
 
       As you navigate through my portfolio, you'll discover a professional who is continuously evolving, always eager to learn, and unyielding in the face of challenges—let's conquer the cloud together.
     skills:
-      enable: true
+      enable: false
       title: "A glimpse at my non-technical side:"
       items:
         - "Gaming"
@@ -248,14 +250,14 @@ params:
     items:
       - title: Cloud Portfolio
         content: Static portfolio website hosted on AWS S3, with serverless components including API Gateway, Lambda, and DynamoDB. Also utilized Route53, Amazon Certificate Manager, and CloudFront. Infrastructure was converted to IaC using Terraform, and implemented via CI/CD pipeline using GitHub Actions with Cypress end-to-end testing.
-        image: /images/cloud-resume-diagram.png
+        image: /images/blog/cloud-resume/cloud-resume-diagram.png
         featured:
           name: Blog Post
-          link: /blogs/cloud-resume-challenge/
+          link: /blogs/cloud-portfolio/
         badges:
           - "AWS"
           - "Terraform"
-          - "CI/CD"
+          - "GitHub Actions"
           - "Python"
           - "Javascript"
           - "HTML/CSS"
@@ -277,47 +279,47 @@ params:
           June 2023 <br>
           2GT0MQ420BV11JWT
         url: https://aws.amazon.com/verification
-        image: images/certs/aws-certified-solutions-architect-associate.png
+        image: images/home/certs/aws-certified-solutions-architect-associate.png
       - title: Hashicorp Terraform Associate
         content: July 2023 <br>
         url: https://example.com
-        image: images/certs/terraform.png
+        image: images/home/certs/terraform.png
       - title: Cisco Certified Network Associate (CCNA)
         content: |-
           February 2020 <br>
           NYQDNWFPKDEQ16WG
         url: https://cp.certmetrics.com/cisco/en/public/verify/credential/NYQDNWFPKDEQ16WG
-        image: images/certs/ccna.png
+        image: images/home/certs/ccna.png
       - title: AWS Cloud Practitioner
         content: |-
           March 2022 <br>
           K6H5CCR2QNRQ1LKC
         url: https://aws.amazon.com/verification
-        image: images/certs/aws-certified-cloud-practitioner.png
+        image: images/home/certs/aws-certified-cloud-practitioner.png
       - title: CompTIA Project+
         content: |
           October 2021 <br>
           89MWG7XQF14Q18S3
         url: https://www.certmetrics.com/comptia/public/verification.aspx?code=89MWG7XQF14Q18S3
-        image: images/certs/comptia-project-certification.1.png
+        image: images/home/certs/comptia-project-certification.1.png
       - title: CompTIA Security+
         content: |
           September 2020 <br>
           EP71PTLPQPEQ16WQ
         url: https://www.certmetrics.com/comptia/public/verification.aspx?code=EP71PTLPQPEQ16WQ
-        image: images/certs/comptia-security-ce-certification.png
+        image: images/home/certs/comptia-security-ce-certification.png
       - title: CompTIA Network+
         content: |-
           April 2018 <br>
           Y2Q7TQXPPG141MK4
         url: https://www.certmetrics.com/comptia/public/verification.aspx?code=NSF0EHMX68L6FZGM
-        image: images/certs/comptia-network-ce-certification.1.png
+        image: images/home/certs/comptia-network-ce-certification.1.png
       - title: CompTIA A+
         content: |-
           December 2016 <br>
           NWYHN9P3FCE4YNMM
-        url: https://www.certmetrics.com/comptia/public/verification.aspx?code=8CKHZEJGF3EQYE4Z    
-        image: images/certs/comptia-a-ce-certification.1.png
+        url: https://www.certmetrics.com/comptia/public/verification.aspx?code=8CKHZEJGF3EQYE4Z
+        image: images/home/certs/comptia-a-ce-certification.1.png
 
   # Contact
   contact:
@@ -338,7 +340,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/sp-howard
@@ -371,4 +373,3 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
-
